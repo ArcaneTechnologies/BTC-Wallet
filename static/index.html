@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Title & Styles -->
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- Headers -->
+  <header id="header-1">
+    <h1>ArcaneWallet</h1>
+    <img src="./images/logo2.png" class="logo">
+    <p>Safe passage into the world of cryptocurrency.</p>
+    <p>Economical and user-friendly bitcoin wallet.</p>
+  </header>
+
+  <header id="header-2" style="display: none;">
+    <img src="./images/logo2.png" class="logo-main">
+  </header>
+
+  <!-- Main -->
+  <div id="main-content">
+    <!-- Statically-Generated Content -->
+    <div id="entry">
+      <button id="create-wallet"><i class="fas fa-plus"></i> Create Wallet</button>
+      <button id="import-wallet"><i class="fas fa-trash-restore"></i> Restore Wallet</button>
+    </div>
+
+    <!-- Statically-Generated Content -->
+    <div id="wallet-forms">
+      <!-- Alert Banner -->
+      <div id="alert-msg"></div>
+
+      <!-- Created Wallet Form -->
+      <div id="new-wallet" style="display: none">
+        <form id="new-wallet-form">
+          <div class="choice">
+            <label><input type="radio" name="network" value="mainnet" checked> Main Net</label><br>
+            <label><input type="radio" name="network" value="testnet"> Test Net</label>
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+
+      <!-- Imported Wallet Form -->
+      <div id="old-wallet" style="display: none">
+        <form id="old-wallet-form">
+            <div class="choice">
+              <input type="text" name="cipher" placeholder="Enter your private key" class="form-control">
+            </div>
+            <button type="submit">Unlock</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Wallet Information / Transaction Confirmation -->
+    <div id="output-area"></div>
+    <div class="filler-area"></div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+
+  <!-- Scripts -->
+    <!-- jQuery + Popper + Bootstrap + FontAwesome-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a260f4d907.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+  <script type="text/javascript" src="./scripts/bundle.js"></script>
+  <script type="text/javascript" src="./scripts/wallet.js"></script>
+</body>
+</html>

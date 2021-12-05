@@ -1,0 +1,120 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+body
+{
+  border: 2px solid black;
+}
+
+/* ---Headers--- */
+#header-1
+{
+  padding-top: 10vh;
+}
+
+#header-1 h1
+{
+  font-size: 6vw;
+  font-weight: 300;
+}
+
+#header-1 p
+{
+  font-size: 3vw;
+  margin: 0;
+}
+
+.logo
+{
+  height: 20vh;
+}
+
+#header-2
+{
+  background-color: black;
+  margin-bottom: 3vh;
+}
+
+.logo-main
+{
+  height: 5vh;
+  margin: 1vh 0;
+}
+
+/* ---Main--- */
+#main-content button
+{
+  font-size: 3vw;
+  margin: 5vh 0;
+  padding: 1vw;
+  width: 30vw;
+  background: -webkit-linear-gradient( #08c1b6, #1a645e, #167aa1);
+  color: #fff;
+}
+
+.choice
+{
+  text-align: left;
+  margin-left: 20vw;
+}
+
+.choice > label
+{
+  border-bottom: 2px solid rgb(79, 156, 146);
+}
+
+#account-border
+{
+  border: 2px solid rgb(79, 156, 146);
+}
+
+#output-area
+{
+  padding: 0 10vw;
+  text-align: center;
+}
+
+.key-info
+{
+  border: 2px solid black;
+  width: 31rem;
+  margin: auto;
+}
+
+#tx-form
+{
+  text-decoration: none;
+}
+
+
+/* ---Footer--- */
+#footer
+{
+  height: 2vh;
+  background-color: black;
+}
+
+
+
+/* Extra */
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
